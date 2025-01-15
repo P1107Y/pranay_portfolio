@@ -71,19 +71,20 @@ nav .right a span {
 }
 
 .hero-section .text {
-  flex: 5;
-  margin-top: 10px;
+  flex: 1;
   line-height: 1.6;
   text-align: justify;
 }
 
 .hero-section .text h2 {
-  font-size: 45px;
+  font-size: 2.5rem;
 }
 
 .hero-section .text .links {
   margin-top: 20px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .links {
@@ -94,17 +95,16 @@ nav .right a span {
 }
 
 .hero-section .text .links a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 10px 20px;
-  border: 1px solid #ddd; /* Optional: Border for separation */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #eeeff1;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  flex-wrap: nowrap;
 }
 
 .hero-section .text .links a:hover {
@@ -113,16 +113,17 @@ nav .right a span {
 }
 
 .hero-section .headshot {
-  flex: 2;
-  display: flex;
-  justify-content: right;
+  flex: 0 1 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-section .headshot img {
-  width: 300px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: fill;
+  width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* SECTION 2: Skills */
@@ -252,7 +253,6 @@ nav .right a span {
 .projects-section .group .project-details {
   text-align: left;
   text-align: justify;
-
 }
 
 .projects-section .group .project-title {
@@ -266,7 +266,6 @@ nav .right a span {
   margin-top: 5px;
   color: #555;
   text-align: justify;
-
 }
 
 .projects-section .group .project-description {
@@ -278,127 +277,122 @@ nav .right a span {
   list-style-type: disc;
   padding-left: 20px;
   text-align: justify;
-
 }
 
 .projects-section .group .project-description li {
   font-size: 16px;
   margin-bottom: 8px;
   text-align: justify;
-
 }
 
 /* SECTION 5: Publications */
 
 .publications-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
+  padding: 0 50px;
+  margin-bottom: 100px;
 }
 
 .publications-section h2 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .publications-section .group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .publications-section .publication-details {
-    text-align: left;
-    margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .publications-section .publisher {
-    font-size: 20px; /* Same font size as company info */
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 20px; /* Same font size as company info */
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .publications-section .paper-title {
-    font-size: 24px; /* Same as project title font */
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+  font-size: 24px; /* Same as project title font */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .publications-section .publication-link {
-    font-size: 16px;
-    color: gray; /* Standard link color */
-    text-decoration: none;
+  font-size: 16px;
+  color: gray; /* Standard link color */
+  text-decoration: none;
 }
 
 .publications-section .publication-link:hover {
-    text-decoration: underline; /* Link hover effect */
+  text-decoration: underline; /* Link hover effect */
 }
 
 .publications-section .publication-description {
-    margin-top: 10px;
-    text-align: justify;
-
+  margin-top: 10px;
+  text-align: justify;
 }
 
 .publications-section .publication-description ul {
-    list-style-type: disc;
-    padding-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .publications-section .publication-description li {
-    font-size: 16px;
-    margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
-
 
 /* SECTION 6: Contact */
 .contact-section {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #f9f9f9; /* Optional: Adds a light background */
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9; /* Optional: Adds a light background */
 }
 
 .contact-section h2 {
-    font-size: 35px;
-    margin-bottom: 30px;
+  font-size: 35px;
+  margin-bottom: 30px;
 }
 
 .contact-section .cells {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .contact-section .cell {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: 1px solid #ddd; /* Optional: Border for separation */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-    background-color: #fff;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #ddd; /* Optional: Border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-section .cell i {
-    font-size: 22px;
-    color: #555;
+  font-size: 22px;
+  color: #555;
 }
 
 .contact-section .cell a {
-    color: black; /* Standard link color */
-    text-decoration: none;
+  color: black; /* Standard link color */
+  text-decoration: none;
 }
 
 .contact-section .cell:hover {
-    transform: translateY(-5px); /* Adds a slight hover effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Adds a slight hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 @media (max-width: 850px) {
   /* SECTION 1: Hero */
@@ -479,26 +473,6 @@ nav .right a span {
   .contact-section {
     padding: 0 20px;
   }
-}
-
-/* Add skill progress bars */
-.skill-item {
-  margin-bottom: 20px;
-}
-
-.progress-bar {
-  width: 100%;
-  background: #ddd;
-  height: 10px;
-  border-radius: 5px;
-  margin-top: 5px;
-  position: relative;
-}
-
-.progress-bar div {
-  height: 100%;
-  background: var(--link-color);
-  border-radius: 5px;
 }
 
 /* Footer styling */
